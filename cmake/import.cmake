@@ -18,17 +18,22 @@ function(import_dependency NAME GITHUB_REPO COMMIT)
   set(archive "${dep_root}/archive.zip")
   set(dest "${dep_root}/_extract")
 
+  message(STATUS ">>>>>>>>>>>>>>>>>>>>> Download: ${zip_url} ${archive}")
   file(DOWNLOAD "${zip_url}" "${archive}")
+
+  message(STATUS ">>>>>>>>>>>>>>>>>>>>> mkdir: ${dest}")
   file(MAKE_DIRECTORY "${dest}")
   execute_process(
           WORKING_DIRECTORY "${dest}"
           COMMAND "${CMAKE_COMMAND}" -E tar xf "${archive}")
+  message(STATUS ">>>>>>>>>>>>>>>>>>>>> Remove archive: ${archive}")
   file(REMOVE "${archive}")
 
   # GitHub archives only ever have one folder component at the root, so this
   # will always match that single folder
   file(GLOB dir LIST_DIRECTORIES YES "${dest}/*")
 
+  message(STATUS ">>>>>>>>>>>>>>>>>>>>> Rename: ${dir} ${target}")
   file(RENAME "${dir}" "${target}")
 
   set("${NAME}_SOURCE_DIR" "${target}" PARENT_SCOPE)
