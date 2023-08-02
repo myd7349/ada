@@ -8,7 +8,8 @@ var namespaceada =
       [ "PATH_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#a781f16c18f4d1b11603443cd039e33db", null ],
       [ "QUERY_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#a18aa23e2f62732f939016a46b0b5e94b", null ],
       [ "SPECIAL_QUERY_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#a2a5253f4fefdf61c146c4daf9a3633b9", null ],
-      [ "USERINFO_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#aa0650c53a444901d784cc471f99f79da", null ]
+      [ "USERINFO_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#aa0650c53a444901d784cc471f99f79da", null ],
+      [ "WWW_FORM_URLENCODED_PERCENT_ENCODE", "d7/d35/namespaceada_1_1character__sets.html#aec120154efccb7b70bd36785bf6a71b7", null ]
     ] ],
     [ "checkers", "d3/dbe/namespaceada_1_1checkers.html", [
       [ "begins_with", "d3/dbe/namespaceada_1_1checkers.html#a867f628fcb4da6f36cd5e87d93cc3cbf", null ],
@@ -45,6 +46,7 @@ var namespaceada =
       [ "ipv6", "d9/dea/namespaceada_1_1serializers.html#a18d92c8904f03bf914c9ff5f943194e4", null ]
     ] ],
     [ "unicode", "d2/dc3/namespaceada_1_1unicode.html", [
+      [ "broadcast", "d2/dc3/namespaceada_1_1unicode.html#a6ed16a9339ab5625b761e534b10fce84", null ],
       [ "contains_forbidden_domain_code_point", "d2/dc3/namespaceada_1_1unicode.html#a8e4d69a9364a662aa6b27afee0b33237", null ],
       [ "contains_forbidden_domain_code_point_or_upper", "d2/dc3/namespaceada_1_1unicode.html#aa0a6aef61e1b2117fd60ec4ba0ed9a8d", null ],
       [ "convert_hex_to_binary", "d2/dc3/namespaceada_1_1unicode.html#ab69353b882a97069e4b290be2b1097f2", null ],
@@ -76,6 +78,7 @@ var namespaceada =
     [ "url_aggregator", "d8/d3b/structada_1_1url__aggregator.html", "d8/d3b/structada_1_1url__aggregator" ],
     [ "url_base", "db/d75/structada_1_1url__base.html", "db/d75/structada_1_1url__base" ],
     [ "url_components", "d3/d43/structada_1_1url__components.html", "d3/d43/structada_1_1url__components" ],
+    [ "url_search_params", "dd/dcb/structada_1_1url__search__params.html", "dd/dcb/structada_1_1url__search__params" ],
     [ "result", "dd/d64/namespaceada.html#a7f8335195119f1a7f35d14c06558748b", null ],
     [ "encoding_type", "dd/d64/namespaceada.html#a96c85482f6cab61fbc1724a23426d40b", [
       [ "UTF8", "dd/d64/namespaceada.html#a96c85482f6cab61fbc1724a23426d40baeb7ee0fb585e2ac64fdc086466c474b1", null ],
