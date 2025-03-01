@@ -13,6 +13,7 @@ target_include_directories(ada PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_
 target_include_directories(ada PUBLIC "$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>")
 
 if(MSVC)
+  target_compile_options(ada PRIVATE /source-charset:utf-8)
   if("${MSVC_TOOLSET_VERSION}" STREQUAL "140")
     target_compile_options(ada INTERFACE /W0 /sdl)
     set(ADA_LEGACY_VISUAL_STUDIO TRUE)

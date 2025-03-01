@@ -72,7 +72,7 @@ def dofile(fid: str, prepath: str, filename: str) -> None:
     # Last lines are always ignored. Files should end by an empty lines.
     print(f'/* begin file {RELFILE} */', file=fid)
     includepattern = re.compile('\\s*#\\s*include "(.*)"')
-    with open(file, 'r') as fid2:
+    with open(file, 'r', encoding='utf-8') as fid2:
         for line in fid2:
             line = line.rstrip('\n')
             s = includepattern.search(line)
@@ -114,7 +114,7 @@ DEMOCPP = os.path.join(AMALGAMATE_OUTPUT_PATH, 'cpp')
 README = os.path.join(AMALGAMATE_OUTPUT_PATH, 'README.md')
 
 print(f'Creating {AMAL_H}')
-amal_h = open(AMAL_H, 'w')
+amal_h = open(AMAL_H, 'w', encoding='utf-8')
 print(f'/* auto-generated on {timestamp}. Do not edit! */', file=amal_h)
 for h in ALLCHEADERS:
     doinclude(amal_h, h, f'ERROR {h} not found', h)
@@ -123,7 +123,7 @@ amal_h.close()
 print()
 print()
 print(f'Creating {AMAL_C}')
-amal_c = open(AMAL_C, 'w')
+amal_c = open(AMAL_C, 'w', encoding='utf-8')
 print(f'/* auto-generated on {timestamp}. Do not edit! */', file=amal_c)
 for c in ALLCFILES:
     doinclude(amal_c, c, f'ERROR {c} not found', c)
